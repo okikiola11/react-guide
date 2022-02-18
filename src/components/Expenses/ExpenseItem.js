@@ -6,7 +6,8 @@ import './ExpenseItem.css';
 
 const ExpenseItem = (props) => {
   return (
-      <Card className='expense-item'>
+      <li>
+        <Card className='expense-item'>
           <div className='expense-item__date'>
               <ExpenseDate 
                 date={props.date} 
@@ -18,7 +19,8 @@ const ExpenseItem = (props) => {
             <h2>{props.title}</h2>
             <div className='expense-item__price'>${props.amount}</div>
           </div>
-      </Card>
+        </Card>
+      </li>
   );
 };
 
